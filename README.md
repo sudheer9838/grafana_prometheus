@@ -42,6 +42,7 @@ After=network-online.target
 [Service]
 Type=simple
 User=prometheus
+
 Group=prometheus
 ExecReload=/bin/kill -HUP \$MAINPID
 ExecStart=/usr/local/bin/prometheus \
@@ -70,5 +71,5 @@ Sudo systemctl status prometheus
 
 
 
-
+# Grafana
 
