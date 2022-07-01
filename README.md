@@ -1,4 +1,4 @@
-# grafana_prometheus
+# prometheus
 
 Install prometheus 
 Let’s start by creating the Prometheus system user and group.
