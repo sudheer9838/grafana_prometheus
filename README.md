@@ -115,6 +115,14 @@ wq -------
 $ sudo systemctl daemon-reload
 $ sudo systemctl start node_exporter
 
+# configuration file
+- job_name: "node_exporter"
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ["nodeserver ip:9100"]
 
 
 
